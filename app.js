@@ -129,9 +129,9 @@ app.get("/about", function(req, res){
   res.render("about");
 });
 
-let port = procces.env.PORT;
+let port = process.env.PORT;
 if (port == null || port == "") {
-  port = 3000;
+  port = 8000;
 }
 
 app.listen(port, function() {
